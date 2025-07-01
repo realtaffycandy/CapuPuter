@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+ <PropertyGroup>
+   <TargetFramework>net8.0</TargetFramework>
+   <OutputType>Library</OutputType>
+   <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+ </PropertyGroup>
+
+ <ItemGroup>
+   <Reference Include="CapuPuter/include/**/*.dll">
+     <CopyLocal>true</CopyLocal>
+   </Reference>
+ </ItemGroup>
+
+ <ItemGroup>
+   <EmbeddedResource Include="CapuPuter/Resources/menubundle.bundle" />
+ </ItemGroup>
+</Project>
